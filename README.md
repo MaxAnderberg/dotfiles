@@ -1,7 +1,7 @@
-#Dotfiles
+# Dotfiles
 
 
-#Tools
+# Tools
 Install these tools.
 * homebrew
 * iterm
@@ -11,5 +11,5 @@ Install these tools.
 * tree-sitter
 
 
-#Installation
+# Installation
 Currently it's only possible to install these dotfiles manually.
