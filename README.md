@@ -9,7 +9,7 @@ Install these tools.
 * nvim
 * luajit
 * tree-sitter
-
+* fish
 
 # Installation
 Currently it's only possible to install these dotfiles manually.
