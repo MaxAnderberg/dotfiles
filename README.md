@@ -1,5 +1,5 @@
 # Dotfiles
-
+These are my dotfiles, primarly focus on MacOS.
 
 # Tools
 Install these tools.
@@ -13,3 +13,7 @@ Install these tools.
 
 # Installation
 Currently it's only possible to install these dotfiles manually.
+
+# Todo
+* Set up installation script
+* Create better documentation
