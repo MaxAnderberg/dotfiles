@@ -18,24 +18,17 @@ Currently it's only possible to install these dotfiles manually.
 Rather than moving files around it is a lot easier to link files using symlinks.
 
 Here's an example of my `.tmux.conf` and how to link it on a new machine:
-```mermaid
-flowchart LR
-A -> B
-```
-
-```mermaid
-graph LR;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 
 `ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf`
 
-[![](https://mermaid.ink/img/pako:eNpNj7EKgzAQhl8l3NSCDu3oUKhG6FawbsYhmLMGTCIxoS3quzdWhN50_N93cP8EjREICTwtHzpSUqZJmGt141bUJI4vc4lvN5P0UBivxXHj6UpINlFs5CiNXrY4-x3cNc6EVgWOvnfkVP-z8mVmku_sXEMECq3iUoQfptVk4DpUyCAJq8CWB5EB00tQ_SC4w1xIZywkLe9HjIB7Zx4f3UDirMddopKHSmoLly9A_0pT)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNpNj7EKgzAQhl8l3NSCDu3oUKhG6FawbsYhmLMGTCIxoS3quzdWhN50_N93cP8EjREICTwtHzpSUqZJmGt141bUJI4vc4lvN5P0UBivxXHj6UpINlFs5CiNXrY4-x3cNc6EVgWOvnfkVP-z8mVmku_sXEMECq3iUoQfptVk4DpUyCAJq8CWB5EB00tQ_SC4w1xIZywkLe9HjIB7Zx4f3UDirMddopKHSmoLly9A_0pT)
+Here is a diagram that show's how it works:
 
+```mermaid
+graph LR;
+    dotfiles/.tmux.conf-->.tmux.conf;
+    .tmux.conf-->dotfiles/.tmux.conf;
+```
+As the diagram shows above they will be linked, so any changes in either of the files will update both files.
 # Todo
 * Set up installation script
 * Create better documentation
