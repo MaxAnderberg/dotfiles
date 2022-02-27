@@ -19,7 +19,7 @@ Rather than moving files around it is a lot easier to link files using symlinks.
 
 Here's an example of my `.tmux.conf` and how to link it on a new machine:
 ```mermaid
-graph LR
+flowchart LR
 A -> B
 ```
 `ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf`
