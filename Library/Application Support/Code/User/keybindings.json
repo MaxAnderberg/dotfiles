@@ -36,5 +36,32 @@
   "key": "alt+cmd+left",
   "command": "-workbench.action.terminal.focusPreviousPane",
   "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-}
+},
+  // Traverse VSCode IntelliSense suggestions with vim keybindings.
+  {
+    "key": "cmd+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+    // Move active editor left or right (useful for full-stack web dev).
+    {
+      "key": "cmd+ctrl+j",
+      "command": "moveActiveEditor",
+      "args": {
+        "to": "left"
+      }
+    },
+    {
+      "key": "cmd+ctrl+k",
+      "command": "moveActiveEditor",
+      "args": {
+        "to": "right"
+      }
+    },
+    // todo select all text in quotation, brackets or curly brackets
 ]
