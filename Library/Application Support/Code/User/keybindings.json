@@ -1,4 +1,6 @@
-[{
+[
+  // jump between editor and terminal
+  {
   "key": "ctrl+j",
   "command": "workbench.action.terminal.focus"
 },
@@ -7,6 +9,7 @@
   "command": "workbench.action.focusActiveEditorGroup",
   "when": "terminalFocus"
 },
+ // jump between terminal when it is grouped
 {
   "key": "ctrl+t ctrl+h",
   "command": "workbench.action.terminal.focusNextPane",
@@ -36,8 +39,7 @@
   "key": "alt+cmd+left",
   "command": "-workbench.action.terminal.focusPreviousPane",
   "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-},
-  // Traverse VSCode IntelliSense suggestions with vim keybindings.
+},  // Traverse VSCode IntelliSense suggestions with vim keybindings.
   {
     "key": "cmd+j",
     "command": "selectNextSuggestion",
@@ -63,5 +65,5 @@
         "to": "right"
       }
     },
-    // todo select all text in quotation, brackets or curly brackets
+    // todo select all text in quotation, brackets or curly brackest
 ]
