@@ -65,5 +65,6 @@
         "to": "right"
       }
     },
+    // to enter fullscreen ctrl+cmd+f
     // todo select all text in quotation, brackets or curly brackest
 ]
