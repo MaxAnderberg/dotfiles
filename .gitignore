@@ -1,0 +1,47 @@
+*.o
+\#*#
+*#
+.#*
+.*~
+*~
+.DS_Store
+*.sw[po]
+tags
+TAGS
+.svn
+*.dSYM
+*.log
+*.dvi
+*.aux
+*.elc
+org/
+node_modules/
+themes/
+go/
+Salt/
+Public/
+codeprep/
+gwp/
+
+# Mac starter folders 
+Projects/
+Pictures/
+Music/
+Movies/
+Users/
+Library/
+Downloads/
+Documents/
+Desktop/
+Applications/
+
+# Vim 
+.vim/
+.viminfo
+
+# Random
+.yarnrc
+.zsh_history
+.zsh_session/
+.zshrc
+
