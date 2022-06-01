@@ -42,6 +42,38 @@ Applications/
 # Random
 .yarnrc
 .zsh_history
-.zsh_session/
+.zsh_sessions/
+.zprofile
+.omnisharp/
+.pgadmin/
+.netlify/
+.docker/
+.dlv/
+.lesshst
+.netrc
+.n*
+.b*
+.cache/
+.aws/
+.aws-sam/
+.local/
 .zshrc
+.s*
+.thumbnails/
+.cfg/
+.rediscli_history
+.CFUserTextEncoding
+# emacs 
+.doom.d/
+.emacs.d/
+.profile
+# config
+.config/starship.toml
+.config/gatsby
+.config/com.corsair/
+.config/configstore/
+.config/darktable/
+.config/iterm2/
+.config/karabiner/
+.config/yarn/
 
