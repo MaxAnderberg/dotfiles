@@ -10,9 +10,14 @@ if type -q exa
 end
 # starship init fish | source
 
+set -x URL_DB redis
+set -x REDIS_URL redis://localhost:6379
+
 #alias vim="/opt/homebrew/bin/nvim"
 export EDITOR='/Users/max/.local/bin/lvim'
 set -x GOPATH $HOME/Users/max/go
+set -x PATH $PATH:/$GOPATH/bin
+
 
 # tmux ide dekstop mode
 function ide --description 'magix stuff!'
@@ -30,3 +35,5 @@ end
 #set -x rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
 fish_add_path /opt/homebrew/bin
 oh-my-posh --init --shell fish --config ~/.poshthemes/m365princess.json | source
+
+set -x  PATH $HOME/.emacs.d/bin:$PATH

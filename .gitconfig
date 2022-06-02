@@ -1,0 +1,7 @@
+[user]
+	name = Max Anderberg
+	email = maxanderberg@gmail.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
