@@ -29,6 +29,13 @@ graph LR;
     .tmux.conf-->dotfiles/.tmux.conf;
 ```
 As the diagram shows above they will be linked, so any changes in either of the files will update both files.
+# Shell setup
+* Fish
+* [Fisher](https://github.com/jorgebucaran/fisher) - plugin manager for fish
+* Peco
+* Lazy git
+* z for fish
+* exa
 # Todo
 * Set up installation script
 * Create better documentation
