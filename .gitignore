@@ -1,4 +1,5 @@
 *.o
+.profile
 \#*#
 *#
 .#*
@@ -22,7 +23,7 @@ Salt/
 Public/
 codeprep/
 gwp/
-
+.config/nvim/.DS_Store
 # Mac starter folders 
 Projects/
 Pictures/
@@ -70,6 +71,7 @@ Applications/
 # config
 .config/starship.toml
 .config/gatsby
+.profile
 .config/com.corsair/
 .config/configstore/
 .config/darktable/
