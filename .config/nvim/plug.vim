@@ -1,14 +1,11 @@
 call plug#begin()
-"
+  Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-rhubarb'
   " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
   Plug 'junegunn/vim-easy-align'
-
-  " Any valid git URL is allowed
   " Plug 'junegunn/vim-github-dashboard'
-
   " Multiple Plug commands can be written in a single line using | separators
   Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'hoob3rt/lualine.nvim'
   Plug 'kristijanhusak/defx-git'
