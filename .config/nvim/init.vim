@@ -154,5 +154,12 @@ set exrc
 set clipboard+=unnamedplus
 " Copy selected text in visual mode
 "set clipboard+=autoselect
-  
+autocmd BufWritePre *.go :GoImports
+autocmd BufWritePre *.go :GoMetaLinter
 " vim: set foldmethod=marker foldlevel=0:
+
+
+" go settings
+  let g:go_metalinter_autosave = 1
+    let g:go_metalinter_command = "golangci-lint"
+

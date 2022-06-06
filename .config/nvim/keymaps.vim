@@ -59,3 +59,8 @@ nmap <C-w><left> <C-w><
 nmap <C-w><right> <C-w>>
 nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
+
+" Go
+au FileType go nmap <leader>r <Plug>(go-lint)
+
+
