@@ -60,6 +60,7 @@ local function lsp_keymaps(bufnr)
   keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
   keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
   keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+  vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 end
 
 M.on_attach = function(client, bufnr)
@@ -72,6 +73,10 @@ M.on_attach = function(client, bufnr)
   end
 
   if client.name == "sumneko_lua" then
+    client.server_capabilities.document_formatting = false
+  end
+
+  if client.name == "gopls" then
     client.server_capabilities.document_formatting = false
   end
 
