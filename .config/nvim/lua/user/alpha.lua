@@ -5,12 +5,12 @@ end
 
 local dashboard = require "alpha.themes.dashboard"
 dashboard.section.header.val = {
-  [[                               __                ]],
-  [[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
-  [[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-  [[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-  [[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-  [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+    [[ _______             ____   ____.__         ]],
+    [[ \      \   ____  ___\   \ /   /|__| _____  ]],
+    [[ /   |   \_/ __ \/  _ \   Y   / |  |/     \ ]],
+    [[/    |    \  ___(  <_> )     /  |  |  Y Y  \]],
+    [[\____|__  /\___  >____/ \___/   |__|__|_|  /]],
+    [[        \/     \/                        \/ ]],
 }
 dashboard.section.buttons.val = {
   dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
@@ -22,7 +22,7 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "Max Anderberg"
+  return "Work Harder"
 end
 
 dashboard.section.footer.val = footer()

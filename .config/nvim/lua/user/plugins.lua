@@ -61,7 +61,7 @@ return packer.startup(function(use)
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
   use { "lunarvim/colorschemes"}
-  use {"svrana/neosolarized.nvim"} -- best scheme
+  use { "overcache/NeoSolarized" }
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" } -- The completion plugin
@@ -90,6 +90,9 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     commit = "518e27589c0463af15463c9d675c65e464efc2fe",
   }
+
+  -- Vim Go
+  --use { "", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" }

@@ -1,6 +1,6 @@
 -- Shorten function name
 local keymap = vim.keymap.set
--- Silent keymap option
+
 local opts = { silent = true }
 
 vim.g.mapleader = " " --Remap space as leader key
@@ -18,7 +18,7 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "sh", "<C-w>h", opts)
+keymap("", "sh", "<C-w>h", opts)
 keymap("n", "sj", "<C-w>j", opts)
 keymap("n", "sk", "<C-w>k", opts)
 keymap("n", "sl", "<C-w>l", opts)
