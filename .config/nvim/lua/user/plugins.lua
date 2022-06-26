@@ -60,9 +60,18 @@ return packer.startup(function(use)
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
-  use { "lunarvim/colorschemes"}
+  use { "lunarvim/colorschemes" }
   use { "overcache/NeoSolarized" }
-
+  use { "morhetz/gruvbox" }
+  use { "EdenEast/nightfox.nvim" }
+  use { "ishan9299/modus-theme-vim" } -- this one is quite nice tbh
+  use { "projekt0n/github-nvim-theme" }
+  use { "arzg/vim-colors-xcode" }
+  use { "NLKNguyen/papercolor-theme" } -- test 1
+  use { "haystackandroid/snow" } -- also nice 
+  use { "haystackandroid/cosmic_latte" } -- very nice
+  use { "liuchengxu/space-vim-theme" }
+  use { "sonph/onehalf" }
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" } -- The completion plugin
   use { "hrsh7th/cmp-buffer", commit = "62fc67a2b0205136bc3e312664624ba2ab4a9323" } -- buffer completions
