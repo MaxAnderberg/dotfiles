@@ -78,4 +78,5 @@ Applications/
 .config/iterm2/
 .config/karabiner/
 .config/yarn/
-
+# Vscode
+.vscode
