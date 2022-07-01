@@ -75,8 +75,9 @@ Applications/
 .config/com.corsair/
 .config/configstore/
 .config/darktable/
-.config/iterm2/
 .config/karabiner/
 .config/yarn/
+.config/coc/
+.config/nvim_bckup/
 # Vscode
 .vscode
