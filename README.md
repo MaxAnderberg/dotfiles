@@ -11,6 +11,11 @@ Install these tools.
 * tree-sitter
 * fish
 
+## Note taking
+
+Note taking is an important aspect of development. I think it's quite important to build a 2nd brain, or build a personalized wiki. 
+For my note taking I use Obsidian. 
+
 # Installation
 Currently it's only possible to install these dotfiles manually.
 
