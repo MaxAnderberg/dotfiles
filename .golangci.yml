@@ -5,5 +5,5 @@ linters:
   # https://golangci-lint.run/usage/linters/#enabled-by-default-linters
   # Enable all available linters.
   # Default: false
-  enable-all: true
+  enable-all: false
 
