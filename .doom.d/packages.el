@@ -50,3 +50,4 @@
 ;(unpin! t)
 
 (package! flycheck-inline)
+(package! flycheck-golangci-lint)

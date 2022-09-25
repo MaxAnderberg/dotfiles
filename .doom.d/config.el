@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-gruvbox)
+(setq doom-theme 'doom-tokyo-night)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -122,3 +122,14 @@
 
   ;; vim mode !!!!!! thank you.
   (company-tng-configure-default))
+
+(defvar-local flycheck-local-checkers nil)
+  (defun +flycheck-checker-get(fn checker property)
+    (or (alist-get property (alist-get checker flycheck-local-checkers))
+        (funcall fn checker property)))
+  (advice-add 'flycheck-checker-get :around '+flycheck-checker-get)
+
+
+(add-hook 'go-mode-hook (lambda()
+                            (flycheck-golangci-lint-setup)
+                            (setq flycheck-local-checkers '((lsp . ((next-checkers . (golangci-lint))))))))
