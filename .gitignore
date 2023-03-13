@@ -3,4 +3,5 @@
 
 # Except these files
 !.gitignore
-!org/
+!./org/
+!.doom.d/
